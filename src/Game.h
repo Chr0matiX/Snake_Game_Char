@@ -5,24 +5,12 @@
 #ifndef SNAKE_CHAR_GAME_H
 #define SNAKE_CHAR_GAME_H
 
-#include <windows.h>
 #include "snake/SnakeMap.h"
 #include "snake/Snake.h"
 #include "snake/prop/SnakeLongerProp.h"
 
 class Game {
 private:
-    // 控制台句柄
-    HANDLE consoleHandle;
-    // 两个缓冲区大小
-    CHAR_INFO* buffer1;
-    CHAR_INFO* buffer2;
-    bool useBuffer1;
-    // 控制台大小
-    SMALL_RECT windowSize;
-    // 光标位置
-    COORD cursorPos;
-
     // 地图指针
     SnakeMap* snakeMap;
 
